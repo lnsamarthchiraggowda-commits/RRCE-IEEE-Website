@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #17233b;
+}
+
+header {
+    background: #071b3a;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #42a5ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #42a5ff;
+}
+
+.hero {
+    min-height: 550px;
+    background: linear-gradient(120deg, #071b3a, #0757a6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #62c5ff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #1685ed;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #0059b3;
+}
+
+section:not(.hero) {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #0757a6;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #0757a6;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #071b3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 6%;
+    }
+}
